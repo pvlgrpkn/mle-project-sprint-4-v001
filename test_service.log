@@ -1,0 +1,14 @@
+Starting recommendation service test run...
+Known user with personal recommendations: 3
+Unknown user for cold-start scenario: 1374583
+Track for online-history scenario: 26
+Healthcheck OK: {'status': 'ok', 'artifact_dir': '/home/mle-user/mle-sprint4/mle-project-sprint-4-v001', 'item_count': 1000000, 'ranked_user_count': 752870, 'similar_track_count': 1000000, 'metrics_available': ['personal_als', 'ranked', 'top_popular']}
+Scenario 1: user without personal recommendations.
+Scenario 1 passed. Sources: ['top_popular', 'top_popular', 'top_popular', 'top_popular', 'top_popular']
+Scenario 2: user with personal recommendations and no online history.
+Scenario 2 passed. Sources: ['offline_ranked', 'offline_ranked', 'offline_ranked', 'offline_ranked', 'offline_ranked']
+Scenario 3: user with personal recommendations and online history.
+Recorded event: {'status': 'accepted', 'user_id': 3, 'track_id': 26, 'history_size': 1}
+Scenario 3 passed. Sources: ['online_similar', 'offline_ranked', 'online_similar', 'offline_ranked', 'offline_ranked']
+Scenario 3 recommendation IDs: [29854999, 54798445, 27419607, 57921154, 39946957]
+All service scenarios passed successfully.

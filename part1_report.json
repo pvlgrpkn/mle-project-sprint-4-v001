@@ -1,0 +1,125 @@
+{
+  "summary": [
+    {
+      "table": "tracks",
+      "rows": 1000000,
+      "unique_track_id": 1000000,
+      "date_min": null,
+      "date_max": null
+    },
+    {
+      "table": "catalog_names",
+      "rows": 1812471,
+      "unique_track_id": null,
+      "date_min": null,
+      "date_max": null
+    },
+    {
+      "table": "interactions",
+      "rows": 222629898,
+      "unique_track_id": 1000000,
+      "date_min": "2022-01-01T00:00:00",
+      "date_max": "2022-12-31T00:00:00"
+    }
+  ],
+  "details": {
+    "track_id_dtype": "int64",
+    "catalog_id_dtype": "int64",
+    "user_id_dtype": "int32",
+    "track_seq_dtype": "int16",
+    "started_at_dtype": "datetime64[ns]",
+    "track_name_missing": 0,
+    "empty_albums": 18,
+    "empty_artists": 15369,
+    "empty_genres": 3687,
+    "non_positive_track_seq": 0,
+    "null_started_at": 0,
+    "user_count": 1373221,
+    "track_count_in_events": 1000000,
+    "unknown_albums_rows": 0,
+    "unknown_albums_ids": 0,
+    "unknown_artists_rows": 0,
+    "unknown_artists_ids": 0,
+    "unknown_genres_rows": 48369,
+    "unknown_genres_ids": 30,
+    "unknown_albums_examples": [],
+    "unknown_artists_examples": [],
+    "unknown_genres_examples": [
+      124,
+      126,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      146,
+      148
+    ]
+  },
+  "missing_genres": [
+    124,
+    126,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    146,
+    148,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169
+  ],
+  "stage2_paths": {
+    "items_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/items.parquet",
+    "events_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/events.parquet",
+    "items_s3": null,
+    "events_s3": null
+  },
+  "offline_paths": {
+    "top_popular_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/top_popular.parquet",
+    "personal_als_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/personal_als.parquet",
+    "similar_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/similar.parquet",
+    "recommendations_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/recommendations.parquet",
+    "metrics_local": "/home/mle-user/mle-sprint4/mle-project-sprint-4-v001/metrics.json"
+  },
+  "metrics": {
+    "top_popular": {
+      "precision": 0.004024121757442327,
+      "recall": 0.0013948350972202662,
+      "coverage": 8.302532272343065e-05,
+      "novelty": 3.7968203932994893
+    },
+    "personal_als": {
+      "precision": 0.011554717281868056,
+      "recall": 0.007929046421769698,
+      "coverage": 0.0016194939456534243,
+      "novelty": 4.722115072888873
+    },
+    "ranked": {
+      "precision": 0.011554717281868056,
+      "recall": 0.007929046421769698,
+      "coverage": 0.0016194939456534243,
+      "novelty": 4.72211507288887
+    }
+  }
+}
